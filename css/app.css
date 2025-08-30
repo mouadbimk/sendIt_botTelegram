@@ -1,0 +1,114 @@
+/* Reset & base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f3f7, #e2e8f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Form container */
+.form-container {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.form-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Form grid layout */
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #34495e;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus,
+textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  padding: 0.85rem;
+  background: #3498db;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Success / error messages */
+.message {
+  text-align: center;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-top: 0.75rem;
+  display: none;
+}
+.message.success {
+  background: #2ecc71;
+  color: #fff;
+}
+.message.error {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 2rem 1.5rem;
+  }
+}
