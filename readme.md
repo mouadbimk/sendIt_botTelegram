@@ -18,8 +18,8 @@ A professional contact form built with **HTML, CSS, and JavaScript (Parcel bundl
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/telegram-contact-form.git
-cd telegram-contact-form
+git clone https://github.com/mouadbimk/sendIt_botTelegram
+cd sendIt_botTelegram
 ```
 
 ## 2️⃣ Install dependencies
