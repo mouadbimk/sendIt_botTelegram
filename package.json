@@ -1,19 +1,22 @@
 {
   "name": "bot_telegram",
   "version": "1.0.0",
-  "description": "",
+  "description": "Small and Easy why to send form data to bot telegram",
   "license": "ISC",
-  "author": "",
+  "author": "Mouad Bimekliouen",
   "type": "module",
+  "homepage": "https://mouadbimk.github.io/sendIt_botTelegram",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.1",
     "events": "^3.3.0",
+    "gh-pages": "^6.3.0",
     "os-browserify": "^0.3.0",
     "parcel": "^2.15.4",
     "path-browserify": "^1.0.1",
